@@ -1,0 +1,13 @@
+# Python virtual environment (each person makes their own)
+env/
+
+# Auto-generated Python files
+__pycache__/
+*.egg-info/
+.ruff_cache/
+
+# JavaScript packages (reinstalled with npm)
+node_modules/
+
+# Mac system files
+.DS_Store
