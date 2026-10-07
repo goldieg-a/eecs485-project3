@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# chat485install
+#
+# Install the Chat485 back end and front end
+
+# Stop on errors, print commands
+set -Eeuo pipefail
+set -x
+
+# Create and activate a Python virtual environment
+python3 -m venv env
+source env/bin/activate
+
+# Install back end
+pip install -r requirements.txt
+pip install -e .
+
+# Install front end
+npm ci .
